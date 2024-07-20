@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Anti CSGOEmpire Roulette Scam",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "ico.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://csgoempire.com/*"],
+          "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "tabs"
+    ]
+}
